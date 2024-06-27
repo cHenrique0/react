@@ -23,6 +23,7 @@ export default function PostsList({ isPosting, onStopPosting }) {
           <NewPost
             onChangeText={inputTextHandler}
             onChangeName={inputNameHandler}
+            onCancel={onStopPosting}
           />
         </Modal>
       )}
