@@ -4,14 +4,9 @@ import Modal from "./Modal";
 import styles from "./PostsList.module.css";
 import { useState } from "react";
 
-export default function PostsList() {
+export default function PostsList({ isPosting, onStopPosting }) {
   const [text, setText] = useState("");
   const [name, setName] = useState("");
-  const [modalIsVisible, setModalIsVisible] = useState(true);
-
-  function hideModalHandler() {
-    setModalIsVisible(false);
-  }
 
   function inputTextHandler(event) {
     setText(event.target.value);
@@ -23,8 +18,8 @@ export default function PostsList() {
 
   return (
     <>
-      {modalIsVisible && (
-        <Modal onClose={hideModalHandler}>
+      {isPosting && (
+        <Modal onClose={onStopPosting}>
           <NewPost
             onChangeText={inputTextHandler}
             onChangeName={inputNameHandler}
