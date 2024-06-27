@@ -1,14 +1,30 @@
 import Post from "./Post";
+import NewPost from "./NewPost";
 import styles from "./PostsList.module.css";
+import { useState } from "react";
 
-export default function PostsList({ posts = [] }) {
+export default function PostsList() {
+  const [text, setText] = useState("");
+  const [name, setName] = useState("");
+
+  function inputTextHandler(event) {
+    setText(event.target.value);
+  }
+
+  function inputNameHandler(event) {
+    setName(event.target.value);
+  }
+
   return (
-    <ul className={styles.posts}>
-      {posts.map((post) => (
-        <li key={post.id}>
-          <Post author={post.author} comment={post.comment} />
-        </li>
-      ))}
-    </ul>
+    <>
+      <NewPost
+        onChangeText={inputTextHandler}
+        onChangeName={inputNameHandler}
+      />
+      <ul className={styles.posts}>
+        <Post author={name} comment={text} />
+        <Post author="Alice" comment="Hello World!" />
+      </ul>
+    </>
   );
 }
