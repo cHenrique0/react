@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./NewPost.module.css";
 
-export default function NewPost({ onCancel }) {
+export default function NewPost({ onCancel, onAddNewPost }) {
   const [text, setText] = useState("");
   const [name, setName] = useState("");
 
@@ -17,7 +17,7 @@ export default function NewPost({ onCancel }) {
     event.preventDefault();
     const id = Math.floor(Math.random() * 10000);
     const postData = { id, name, text };
-    console.log(postData);
+    onAddNewPost(postData);
     onCancel();
   }
 
