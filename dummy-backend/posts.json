@@ -1,0 +1,10 @@
+{
+  "posts": [
+    { "id": "1217", "name": "teste", "text": "teste" },
+    {
+      "id": "post-1",
+      "name": "Maximilian",
+      "text": "This course is hopefully very helpful to you!"
+    }
+  ]
+}
