@@ -4,6 +4,13 @@
 }
 
 :root {
+  /* Desafio: https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ */
+  --slp-green: hsl(75, 94%, 57%);
+  --slp-white: hsl(0, 0%, 100%);
+  --slp-gray: hsl(0, 0%, 20%);
+  --slp-dark-grey: hsl(0, 0%, 12%);
+  --slp-off-black: hsl(0, 0%, 8%);
+
   min-height: 100vh;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   /* font-size: 16px; */
