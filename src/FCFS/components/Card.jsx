@@ -1,13 +1,13 @@
 import styles from "../styles/Card.module.css";
 
-export default function Card() {
+export default function Card({ title, description, borderColor, iconPath }) {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} style={{ borderColor: `var(${borderColor})` }}>
       <div>
-        <h2>Team Builder</h2>
-        <p>Alguma descrição do card grande que descreva o descrito</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
-      <img className={styles.icon} src="/public/FCFS/icon-calculator.svg" />
+      <img className={styles.icon} src={iconPath} />
     </div>
   );
 }
