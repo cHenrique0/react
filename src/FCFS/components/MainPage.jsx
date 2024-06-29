@@ -44,15 +44,36 @@ export default function MainPage() {
         </p>
       </div>
       <div className={styles.cards}>
-        {cardInfo.map((card, index) => (
+        <div className={styles.col1}>
           <Card
-            key={index}
-            title={card.title}
-            description={card.description}
-            iconPath={card.iconPath}
-            borderColor={card.color}
+            title={cardInfo[0].title}
+            description={cardInfo[0].description}
+            iconPath={cardInfo[0].iconPath}
+            borderColor={cardInfo[0].color}
           />
-        ))}
+        </div>
+        <div className={styles.col2}>
+          <Card
+            title={cardInfo[1].title}
+            description={cardInfo[1].description}
+            iconPath={cardInfo[1].iconPath}
+            borderColor={cardInfo[1].color}
+          />
+          <Card
+            title={cardInfo[2].title}
+            description={cardInfo[2].description}
+            iconPath={cardInfo[2].iconPath}
+            borderColor={cardInfo[2].color}
+          />
+        </div>
+        <div className={styles.col3}>
+          <Card
+            title={cardInfo[3].title}
+            description={cardInfo[3].description}
+            iconPath={cardInfo[3].iconPath}
+            borderColor={cardInfo[3].color}
+          />
+        </div>
       </div>
     </main>
   );

@@ -1,0 +1,46 @@
+main {
+  margin: 3rem;
+}
+
+.header {
+  text-align: center;
+  margin: 4rem auto;
+  color: var(--fcfs-very-dark-blue);
+  width: 35%;
+}
+
+.header h1 {
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.header h1 span {
+  font-weight: 600;
+}
+
+.header p {
+  color: var(--fcfs-grayish-blue);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr 1.5fr;
+  padding: 0;
+}
+
+.col1,
+.col2,
+.col3 {
+  display: flex;
+  place-items: center;
+}
+
+.col1 {
+  place-content: flex-end;
+}
+
+.col2 {
+  flex-direction: column;
+  margin: 0 2rem;
+  gap: 2rem;
+}
