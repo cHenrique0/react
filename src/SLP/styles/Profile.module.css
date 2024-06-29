@@ -1,0 +1,45 @@
+.card {
+  margin: 3rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  background-color: var(--slp-dark-grey);
+  border-radius: 10px;
+}
+
+.picture {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.25rem 0 1rem;
+  padding: 0;
+}
+
+.description h1 {
+  color: var(--slp-white);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description p {
+  color: var(--slp-green);
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: 0.35px;
+}
+
+.description span {
+  color: var(--slp-white);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
