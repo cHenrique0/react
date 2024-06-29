@@ -6,27 +6,27 @@ export default function MainPage() {
     {
       title: "Supervisor",
       description: "Monitors activity to identify project roadblocks",
-      iconPath: "/public/FCFS/icon-supervisor.svg",
+      iconPath: "/FCFS/icon-supervisor.svg",
       color: "--fcfs-cyan",
     },
     {
       title: "Team Builder",
       description:
         "Scans our talents network to create the optimal team for your project",
-      iconPath: "/public/FCFS/icon-team-builder.svg",
+      iconPath: "/FCFS/icon-team-builder.svg",
       color: "--fcfs-red",
     },
     {
       title: "Karma",
       description: "Regularly evaluates our talent to ensure quality",
-      iconPath: "/public/FCFS/icon-karma.svg",
+      iconPath: "/FCFS/icon-karma.svg",
       color: "--fcfs-orange",
     },
     {
       title: "Calculator",
       description:
         "Uses data from past projects to provide better delivery estimates",
-      iconPath: "/public/FCFS/icon-calculator.svg",
+      iconPath: "/FCFS/icon-calculator.svg",
       color: "--fcfs-blue",
     },
   ];
