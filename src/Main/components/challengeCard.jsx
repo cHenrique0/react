@@ -6,15 +6,21 @@ export default function ChallengeCard({
   description,
   image,
   link,
+  borderColor,
 }) {
   return (
-    <div className={styles.card}>
-      <span>{level}</span>
-      <h2>{title}</h2>
-      <a href={link} target="_blank">
-        <img src={image} />
-      </a>
-      <p>{description}</p>
+    <div
+      className={styles.borderTop}
+      style={{ backgroundColor: `var(${borderColor})` }}
+    >
+      <div className={styles.card}>
+        <span>{level}</span>
+        <h2>{title}</h2>
+        <a href={link} target="_blank">
+          <img src={image} />
+        </a>
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
