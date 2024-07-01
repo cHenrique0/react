@@ -1,18 +1,19 @@
 import styles from "../styles/challengeCard.module.css";
+import IconSvg from "./iconSvg";
 
 export default function ChallengeCard({
   level,
   title,
   image,
   link,
-  borderColor,
+  borderBackground,
 }) {
+  const { color, icon } = borderBackground;
   return (
-    <div
-      className={styles.card}
-      style={{ backgroundColor: `var(${borderColor})` }}
-    >
-      <div className={styles.borderTop}></div>
+    <div className={styles.card} style={{ backgroundColor: `var(${color})` }}>
+      <div className={styles.borderTop}>
+        <IconSvg svg={icon.svg} path={icon.path} fill={color} />
+      </div>
       <div className={styles.content}>
         <span>{level}</span>
         <h2>{title}</h2>

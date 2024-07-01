@@ -1,8 +1,9 @@
 import ChallengeCard from "./challengeCard";
 import styles from "../styles/challengeList.module.css";
+import icons from "/public/Main/icons.module.json";
 
 export default function ChallengeList() {
-  function randomColor() {
+  function randomBackground() {
     const colors = [
       "--index-light-red",
       "--index-soft-blue",
@@ -12,7 +13,10 @@ export default function ChallengeList() {
       "--index-soft-orange",
     ];
 
-    return colors[Math.floor(Math.random() * colors.length)];
+    return {
+      color: colors[Math.floor(Math.random() * colors.length)],
+      icon: icons[Math.floor(Math.random() * icons.length)],
+    };
   }
 
   return (
@@ -22,14 +26,14 @@ export default function ChallengeList() {
         title="Social Links Profile"
         link="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ"
         image="/SLP/design.jpg"
-        borderColor={randomColor()}
+        borderBackground={randomBackground()}
       />
       <ChallengeCard
         level="Easy"
         title="Cards Feature Section"
         link="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK"
         image="/FCFS/design.jpg"
-        borderColor={randomColor()}
+        borderBackground={randomBackground()}
       />
     </div>
   );
