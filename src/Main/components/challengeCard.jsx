@@ -8,11 +8,11 @@ export default function ChallengeCard({
   borderColor,
 }) {
   return (
-    <div className={styles.card}>
-      <div
-        className={styles.borderTop}
-        style={{ backgroundColor: `var(${borderColor})` }}
-      ></div>
+    <div
+      className={styles.card}
+      style={{ backgroundColor: `var(${borderColor})` }}
+    >
+      <div className={styles.borderTop}></div>
       <div className={styles.content}>
         <span>{level}</span>
         <h2>{title}</h2>

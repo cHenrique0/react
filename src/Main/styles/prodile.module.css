@@ -1,5 +1,6 @@
 .profile {
   width: 20%;
+  max-height: 555px;
   display: flex;
   flex-direction: column;
   background-color: var(--index-dark-blue);
