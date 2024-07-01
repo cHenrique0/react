@@ -1,9 +1,7 @@
-import MainPage from "./FCFS/components/MainPage"; // Desafio FCFS
-import Profile from "./SLP/components/Profile"; // Desafio SLP
+import MainWrapper from "./Main/components/mainWrapper";
 
 function App() {
-  // return <Profile />;
-  return <MainPage />;
+  return <MainWrapper />;
 }
 
 export default App;
