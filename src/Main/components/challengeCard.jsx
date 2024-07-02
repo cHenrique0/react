@@ -2,7 +2,6 @@ import styles from "../styles/challengeCard.module.css";
 import IconSvg from "./iconSvg";
 
 export default function ChallengeCard({
-  level,
   title,
   image,
   link,
@@ -15,10 +14,10 @@ export default function ChallengeCard({
         <IconSvg svg={icon.svg} path={icon.path} fillCollor={iconColor} />
       </div>
       <div className={styles.content}>
-        <span>{level}</span>
+        <img src="/Main/icon-ellipsis.svg" className={styles.icon} />
         <h2>{title}</h2>
         <a href={link} target="_blank">
-          <img src={image} />
+          <img src={image} className={styles.image} />
         </a>
       </div>
     </div>
