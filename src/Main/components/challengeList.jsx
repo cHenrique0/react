@@ -5,16 +5,28 @@ import icons from "/public/Main/icons.module.json";
 export default function ChallengeList() {
   function randomBackground() {
     const colors = [
-      "--index-light-red",
-      "--index-soft-blue",
-      "--index-light-red-v2",
-      "--index-lime-green",
-      "--index-violet",
-      "--index-soft-orange",
+      { color: "green", css: "--index-lime-green" },
+      { color: "blue", css: "--index-soft-blue" },
+      { color: "yellow", css: "--index-soft-orange" },
+      { color: "violet", css: "--index-violet" },
+      { color: "red", css: "--index-light-red-v2" },
+      { color: "orange", css: "--index-light-red" },
     ];
 
+    const iconsColors = {
+      green: "#29BA66",
+      blue: "#3F9CBB",
+      yellow: "#E6A532",
+      violet: "#5A1CBB",
+      red: "#F04667",
+      orange: "#D96C47",
+    };
+
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
     return {
-      color: colors[Math.floor(Math.random() * colors.length)],
+      css: randomColor.css,
+      iconColor: iconsColors[randomColor.color],
       icon: icons[Math.floor(Math.random() * icons.length)],
     };
   }

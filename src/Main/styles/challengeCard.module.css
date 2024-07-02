@@ -11,12 +11,17 @@
 
 .borderTop {
   width: inherit;
-  padding-top: 2.5rem;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
   border-radius: 1rem;
 }
 
 .content {
   height: 220px;
+  position: relative;
+  top: -8px;
   display: flex;
   flex-direction: column;
   background-color: var(--index-dark-blue);

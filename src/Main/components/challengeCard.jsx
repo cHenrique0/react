@@ -8,11 +8,11 @@ export default function ChallengeCard({
   link,
   borderBackground,
 }) {
-  const { color, icon } = borderBackground;
+  const { css, iconColor, icon } = borderBackground;
   return (
-    <div className={styles.card} style={{ backgroundColor: `var(${color})` }}>
+    <div className={styles.card} style={{ backgroundColor: `var(${css})` }}>
       <div className={styles.borderTop}>
-        <IconSvg svg={icon.svg} path={icon.path} fill={color} />
+        <IconSvg svg={icon.svg} path={icon.path} fillCollor={iconColor} />
       </div>
       <div className={styles.content}>
         <span>{level}</span>
