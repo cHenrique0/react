@@ -36,14 +36,32 @@ export default function ChallengeList() {
       <ChallengeCard
         level="Easy"
         title="Social Links Profile"
-        link="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ"
+        links={[
+          {
+            url: "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
+            title: "Challenge Page",
+          },
+          {
+            url: "https://github.com/cHenrique0/react/tree/practicing/src/SLP",
+            title: "Repository",
+          },
+        ]}
         image="/SLP/design.jpg"
         borderBackground={randomBackground()}
       />
       <ChallengeCard
         level="Easy"
         title="Cards Feature Section"
-        link="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK"
+        links={[
+          {
+            url: "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
+            title: "Challenge Page",
+          },
+          {
+            url: "https://github.com/cHenrique0/react/tree/practicing/src/FCFS",
+            title: "Repository",
+          },
+        ]}
         image="/FCFS/design.jpg"
         borderBackground={randomBackground()}
       />
